@@ -29,11 +29,11 @@ const App = () => {
       </div> */
     <BrowserRouter>
       <Switch>
-        <Route path="/">
-          <Login />
-        </Route>
         <Route path="/dashboard">
           <Layout />
+        </Route>
+        <Route path="/">
+          <Login />
         </Route>
       </Switch>
     </BrowserRouter>
