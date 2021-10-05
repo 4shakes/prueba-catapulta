@@ -1,8 +1,8 @@
-import logo from '../../assets/images/logo.svg'
-import iconDashboard from '../../assets/images/icon-dashboard.svg'
-import iconProfile from '../../assets/images/icon-profile.svg'
-import iconCompanies from '../../assets/images/icon-companies.svg'
-import iconNews from '../../assets/images/icon-news.svg'
+import logo from '../../assets/imgs/logo.svg'
+import iconDashboard from '../../assets/imgs/icon-dashboard.svg'
+import iconProfile from '../../assets/imgs/icon-profile.svg'
+import iconCompanies from '../../assets/imgs/icon-companies.svg'
+import iconNews from '../../assets/imgs/icon-news.svg'
 import Title from '../../components/Title'
 import Header from '../../components/Header'
 /* import Profile from '../../views/layout/Profile' */

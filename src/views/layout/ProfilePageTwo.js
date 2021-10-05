@@ -1,6 +1,6 @@
 
 import { ButtonDownload } from '../../components/Button/index'
-import iconSuma from '../../assets/images/iconSuma.svg'
+import iconSuma from '../../assets/imgs/iconSuma.svg'
 const ProfilePageTwo = () => {
   return (
     <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-end">

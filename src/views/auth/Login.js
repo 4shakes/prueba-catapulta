@@ -1,5 +1,5 @@
-import logo from '../../assets/images/logo.svg'
-import imagenLogin from '../../assets/images/imagen-login.png'
+import logo from '../../assets/imgs/logo.svg'
+import imagenLogin from '../../assets/imgs/imagen-login.png'
 import InputText from '../../components/InputText'
 // import ForgotPassword from '../../components/ForgotPassword'
 /* import { MenuIcon } from '../../icons' */

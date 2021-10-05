@@ -1,7 +1,7 @@
 import { ButtonDownload } from '../../components/Button/index'
-import bPeru from '../../assets/images/banderaPeru.jpg'
-import ArrowDown from '../../assets/images/iconArrowDown.svg'
-import iconSuma from '../../assets/images/iconSuma.svg'
+import bPeru from '../../assets/imgs/banderaPeru.jpg'
+import ArrowDown from '../../assets/imgs/iconArrowDown.svg'
+import iconSuma from '../../assets/imgs/iconSuma.svg'
 
 const Profile = () => {
   return (

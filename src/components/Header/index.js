@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo.svg'
+import logo from '../../assets/imgs/logo.svg'
 import { UserSolidIcon, MenuIcon } from '../../icons'
 const index = () => {
   return (
