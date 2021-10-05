@@ -22,6 +22,9 @@ const customPalettes = {
 const customPalettesSecond = {
   brand: generatePalette('#BD0C2E')
 }
+const customPalettesAdministrator = {
+  brand: generatePalette('#79321B')
+}
 
 /**
  * Themes
@@ -36,6 +39,10 @@ const themes = {
     },
     second: {
       ...customPalettesSecond.brand,
+      DEFAULT: customPalettes[600]
+    },
+    administrator: {
+      ...customPalettesAdministrator.brand,
       DEFAULT: customPalettes[600]
     },
     accent: {
