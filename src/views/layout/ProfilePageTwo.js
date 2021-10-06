@@ -1,6 +1,7 @@
 import { ButtonDownload } from '../../components/Button/index'
 import InputName from '../../components/inputs/InputName'
 import InputUploadImage from '../../components/inputs/InputUploadImage'
+import InputTextArea from '../../components/inputs/InputTextArea'
 
 import InputUploadImagePerfil from '../../components/inputs/InputUploadImagePerfil'
 const ProfilePageTwo = () => {
@@ -20,10 +21,10 @@ const ProfilePageTwo = () => {
           </div>
           <h2 className="text-2xl text-administrator font-bold my-4">Información de la Empresa</h2>
           <InputUploadImage text="Nombre del Principio 1" icon={false} button={true} />
-          <InputUploadImage text="Parte 1" icon={true} button={false} />
-          {/* FALTA LA PARTE DEL TEXTAREA */}
+          <InputUploadImage text="Parte 1" icon={true} button={false} placeholder='Titulo' />
+          <InputTextArea placeholder="Descripcion" />
           <div className="w-32 mx-auto mt-7">
-            <ButtonDownload width="small" text="Siguiente" color='administrator' outline={true} border='2' />
+            <ButtonDownload width="small" text="Siguiente" color='administrator' outline={true} border='4' />
           </div>
         </div>
       </div>
