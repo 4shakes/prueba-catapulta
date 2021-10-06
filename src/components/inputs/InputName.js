@@ -1,25 +1,41 @@
-const InputName = ({ labelName, placeholder = 'hola' }) => {
+const InputName = ({ labelName = 'Nombre', placeholder = 'Lindley' }) => {
   return (
-    <div className="my-3 mx-1">
-      <div>
-        <label
-          className="text-on-warn text-lg tracking-tight font-bold "
-          htmlFor="name"
 
-        >{labelName}
-        </label>
-      </div>
+    <div>
+      <label
+        className=" text-lg tracking-tight font-bold text-label"
+        htmlFor="name"
+      >{labelName}
+      </label>
 
       <input
-        className=" w-full border border-accent text-on-warn outline-none
-                py-2 pl-4  focus:ring-2 focus:ring-2 focus:ring-accent focus:border-accent-500"
+        className="  w-full text-gray-500 border border-administrator mb-4 outline-none py-2 pl-4  focus:ring-2  focus:ring-2 focus:ring-accent focus:border-accent-500"
         name="name"
         type="text"
         id="name"
         placeholder={placeholder}
-
       />
+      {/* Input de Percy
+      <div className="my-3 mx-1">
+        <div>
+          <label
+            className="text-on-warn text-lg tracking-tight font-bold "
+            htmlFor="name"
 
+          >{labelName}
+          </label>
+        </div>
+
+        <input
+          className=" w-full border border-accent text-on-warn outline-none
+                py-2 pl-4  focus:ring-2 focus:ring-2 focus:ring-accent focus:border-accent-500"
+          name="name"
+          type="text"
+          id="name"
+          placeholder={placeholder}
+
+        />
+      </div> */}
     </div>
   )
 }
