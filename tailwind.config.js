@@ -17,15 +17,15 @@ const generatePalette = require('./src/@tailwind/utils/generate-palette')
  * Tailwind-like color palettes automatically
  */
 const customPalettes = {
-  brand: generatePalette('#F26935')
-}
-const customPalettesSecond = {
-  brand: generatePalette('#BD0C2E')
-}
-const customPalettesAdministrator = {
   brand: generatePalette('#79321B')
 }
-const customPalettesLabel = {
+const customPalettesDarkRed = {
+  brand: generatePalette('#BD0C2E')
+}
+const customPalettesTurquoise = {
+  brand: generatePalette('#00AEC6')
+}
+const customPalettesLead = {
   brand: generatePalette('#948E8C')
 }
 
@@ -40,28 +40,17 @@ const themes = {
       ...customPalettes.brand,
       DEFAULT: customPalettes[600]
     },
-    second: {
-      ...customPalettesSecond.brand,
-      DEFAULT: customPalettes[600]
-    },
-    administrator: {
-      ...customPalettesAdministrator.brand,
-      DEFAULT: customPalettes[600]
-    },
-    label: {
-      ...customPalettesLabel.brand,
-      DEFAULT: customPalettes[600]
-    },
     accent: {
-      ...colors.blueGray,
-      DEFAULT: '#0E1C3A'
+      ...customPalettesDarkRed.brand,
+      DEFAULT: customPalettes[600]
     },
     warn: {
-      ...colors.red,
-      DEFAULT: colors.red[600]
+      ...customPalettesTurquoise.brand,
+      DEFAULT: customPalettes[600]
     },
     'on-warn': {
-      500: colors.red['50']
+      ...customPalettesLead.brand,
+      DEFAULT: customPalettes[500]
     }
   },
   // Rest of the themes will use the 'default' as the base theme

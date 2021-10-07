@@ -3,13 +3,13 @@ const InputName = ({ labelName = 'Nombre', placeholder = 'Lindley' }) => {
 
     <div>
       <label
-        className=" text-lg tracking-tight font-bold text-label"
+        className=" text-lg tracking-tight font-bold text-on-warn"
         htmlFor="name"
       >{labelName}
       </label>
 
       <input
-        className="  w-full text-gray-500 border border-administrator mb-4 outline-none py-2 pl-4  focus:ring-2  focus:ring-2 focus:ring-accent focus:border-accent-500"
+        className="  w-full text-on-warn border border-primary mb-4 outline-none py-2 pl-4  focus:ring-2  focus:ring-2 focus:ring-accent focus:border-accent-500"
         name="name"
         type="text"
         id="name"

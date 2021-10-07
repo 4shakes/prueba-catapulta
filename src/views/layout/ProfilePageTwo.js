@@ -10,7 +10,7 @@ const ProfilePageTwo = () => {
       <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
         <InputUploadImagePerfil />
         <div className="mx-7 md:border-l-2 md:pl-15 lg:w-200" >
-          <h2 className="text-2xl text-administrator font-bold mb-4">Datos Generales</h2>
+          <h2 className="text-2xl text-primary font-bold mb-4">Datos Generales</h2>
           <div className=" lg:flex  lg:gap-13">
             <div className="lg:w-1/2">
               <InputName labelName='Nombre del Principio 1' placeholder='' />
@@ -19,12 +19,12 @@ const ProfilePageTwo = () => {
               <InputUploadImage text="Nombre del Principio 1" icon={true} button={true} />
             </div>
           </div>
-          <h2 className="text-2xl text-administrator font-bold my-4">Información de la Empresa</h2>
+          <h2 className="text-2xl text-primary font-bold my-4">Información de la Empresa</h2>
           <InputUploadImage text="Nombre del Principio 1" icon={false} button={true} />
           <InputUploadImage text="Parte 1" icon={true} button={false} placeholder='Titulo' />
           <InputTextArea placeholder="Descripcion" />
           <div className="w-32 mx-auto mt-7">
-            <ButtonDownload width="small" text="Siguiente" color='administrator' outline={true} border='4' />
+            <ButtonDownload width="small" text="Siguiente" color='primary' outline={true} border='4' />
           </div>
         </div>
       </div>

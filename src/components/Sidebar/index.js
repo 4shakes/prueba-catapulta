@@ -6,8 +6,8 @@ import iconNews from '../../assets/imgs/icon-news.svg'
 import Title from '../../components/Title'
 import Header from '../../components/Header'
 /* import Profile from '../../views/layout/Profile' */
-/* import ProfilePageTwo from '../../views/layout/ProfilePageTwo' */
-import Administrator from '../../views/layout/Administrator'
+import ProfilePageTwo from '../../views/layout/ProfilePageTwo'
+/* import Administrator from '../../views/layout/Administrator' */
 
 const links = [
   {
@@ -50,8 +50,8 @@ const index = () => {
 
         {/* Parte donde van las vistas del proyecto   */}
         {/* <Profile /> */}
-        {/* <ProfilePageTwo /> */}
-        <Administrator />
+        <ProfilePageTwo />
+        {/* <Administrator /> */}
       </div>
     </div>
   )

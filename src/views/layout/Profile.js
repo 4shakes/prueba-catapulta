@@ -10,7 +10,7 @@ const Profile = () => {
       <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
         <InputUploadImagePerfil />
         <div className="mx-7 md:border-l-2 md:pl-15 lg:w-200" >
-          <h2 className="text-2xl text-red-700 font-bold mb-4">Datos Generales</h2>
+          <h2 className="text-2xl text-primary font-bold mb-4">Datos Generales</h2>
           <InputName labelName='Nombre' placeholder='Lindley' />
           <InputName labelName='Direcccion' placeholder='' />
           <InputName labelName='Razon Social' placeholder='' />
@@ -23,7 +23,7 @@ const Profile = () => {
             </div>
           </div>
           <InputUploadImage text="Area de la Empresa" icon={true} button={false} />
-          <h2 className="text-2xl text-red-700 font-bold my-4">Datos del Administrador Principal de la Empresa</h2>
+          <h2 className="text-2xl text-primary font-bold my-4">Datos del Administrador Principal de la Empresa</h2>
           <InputName labelName='Nombres' placeholder='' />
           <InputName labelName='Apellidos' placeholder='' />
           <InputName labelName='Correo Electronico' placeholder='' />
