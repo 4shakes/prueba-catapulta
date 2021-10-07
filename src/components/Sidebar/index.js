@@ -49,8 +49,8 @@ const index = () => {
         <Title title='Perfil' />
 
         {/* Parte donde van las vistas del proyecto   */}
-        {/*  <Profile /> */}
-        {/*   <ProfilePageTwo /> */}
+        {/* <Profile /> */}
+        {/* <ProfilePageTwo /> */}
         <Administrator />
       </div>
     </div>

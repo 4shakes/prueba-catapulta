@@ -1,10 +1,11 @@
-// import excel from '../../assets/images/excel.svg'
-export const ButtonOffice = ({ type = 'button', office /* = excel */ }) => {
+import excel from '../../assets/imgs/excel.svg'
+export const ButtonOffice = ({ type = 'button', office = excel }) => {
   return (
-    <div className="">
-      <input type={type} className='flex items-center font-semibold text-gray-200 gap-x-2 w-52' />
-      <img src={office} alt="" />
-      <p>Descargar Historial</p>
+    <div className="flex justify-center">
+      <button type={type} className='flex items-center font-semibold text-label  gap-x-2 w-72 px-10' >
+        <img src={office} alt="" />
+        <p>Descargar Historial</p>
+      </button>
     </div>
 
   )
@@ -46,11 +47,11 @@ export const ButtonDownload = ({ type = 'button', text = 'Descargar', width = 's
   } else if (width === 'large') {
     if (outline === true) {
       return (
-        <input type={type} className={`cursor-pointer  text-${color}  px-8 py-2 tracking-wide bg-transparent   rounded-md text-center border-${border} border-${color} font-medium text-base  `} value={text} />
+        <input type={type} className={`cursor-pointer  text-${color} w-full px-8 py-2 tracking-wide bg-transparent   rounded-md text-center border-${border} border-${color} font-medium text-base  `} value={text} />
       )
     } else {
       return (
-        <input type={type} className={`cursor-pointer bg-${color} px-8 py-2 tracking-wide text-white border-${border} border-${color} rounded-md text-center  font-medium text-base  `} value={text} />
+        <input type={type} className={`cursor-pointer bg-${color} w-full px-8 py-2 tracking-wide text-white border-${border} border-${color} rounded-md text-center  font-medium text-base  `} value={text} />
       )
     }
   }

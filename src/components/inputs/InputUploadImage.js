@@ -1,6 +1,10 @@
 import React from 'react'
+/* import { useState } from 'react' */
 import iconSuma from '../../assets/imgs/iconSuma.svg'
 const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '' }) => {
+  /*   const [newAreaCompany, setNewAreaCompany] = useState('')
+    const updateNewAreaCompany = e => setNewAreaCompany(e.target.value) */
+
   if (button && icon) {
     return (
       <div className="mb-4">
@@ -16,6 +20,8 @@ const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = t
             type="text"
             id="name"
             placeholder={placeholder}
+          /*             value={newAreaCompany}
+                      onChange={updateNewAreaCompany} */
           />
           <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-administrator text-white text-sm  ">Subir imagen</button >
           <img
