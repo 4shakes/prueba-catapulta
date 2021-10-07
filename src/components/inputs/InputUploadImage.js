@@ -1,4 +1,3 @@
-import React from 'react'
 /* import { useState } from 'react' */
 import iconSuma from '../../assets/imgs/iconSuma.svg'
 const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '' }) => {

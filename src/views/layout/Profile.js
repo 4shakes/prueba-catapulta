@@ -31,14 +31,14 @@ const Profile = () => {
             <div className="lg:w-1/2">
               <InputName labelName='DNI' placeholder='' />
             </div>
-            <div className="relative mb-3 lg:w-1/2">
+            <div className="mb-3 lg:w-1/2">
               <InputPhone />
             </div>
           </div>
           <InputName labelName='Area' placeholder='' />
           <InputName labelName='Cargo' placeholder='' />
           <div className="w-32 mx-auto mt-7">
-            <ButtonDownload width="small" text="Siguiente" color='second' outline={true} border='2' />
+            <ButtonDownload width="small" text="Siguiente" color='primary' outline={true} border='2' />
           </div>
         </div>
       </div>

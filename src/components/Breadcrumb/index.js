@@ -1,11 +1,23 @@
 
-const Breadcrumb = ({ route, routeFinal, separador }) => {
+import separador from '../../assets/imgs/iconBreadcrumb.svg'
+const Breadcrumb = ({ route = 'BD Administrador' }) => {
+  const listaBreadcrumb = [
+    {
+      nextRoute: 'Crear Nuevo',
+      separador: separador
+    }
+  ]
+
   return (
-    <div className="bg-grey-light rounded font-sans">
-      <ol className="list-reset flex text-grey-dark ">
-        <li><a href="#" className="font-bold text-second text-lg">{route}</a></li>
-        <li><img className="mx-2 mt-1" src={separador} /></li>
-        <li className="font-bold text-gray-200 text-lg">{routeFinal}</li>
+    <div className="mx-8 mt-6">
+      <ol className="list-reset flex flex-wrap">
+        <li><a href="#" className="font-bold text-accent text-lg">{route}</a></li>
+        {listaBreadcrumb.map((lista) => (
+          <>
+            <li><img className="mx-2 mt-1" src={lista.separador} /></li>
+            <li className="font-bold text-on-warn text-lg">{lista.nextRoute}</li>
+          </>
+        ))}
       </ol>
     </div>
   )
