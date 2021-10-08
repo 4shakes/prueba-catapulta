@@ -1,8 +1,8 @@
-import { ButtonDownload } from '../../components/Button/index'
-import InputName from '../../components/inputs/InputName'
-import InputPhone from '../../components/inputs/InputPhone'
-import InputUploadImage from '../../components/inputs/InputUploadImage'
-import InputUploadImagePerfil from '../../components/inputs/InputUploadImagePerfil'
+import { ButtonDownload } from '../../../components/Button/index'
+import InputName from '../../../components/inputs/InputName'
+import InputPhone from '../../../components/inputs/InputPhone'
+import InputUploadImage from '../../../components/inputs/InputUploadImage'
+import InputUploadImagePerfil from '../../../components/inputs/InputUploadImagePerfil'
 
 const Profile = () => {
   return (

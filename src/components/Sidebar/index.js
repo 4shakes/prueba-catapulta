@@ -5,10 +5,12 @@ import iconCompanies from '../../assets/imgs/icon-companies.svg'
 import iconNews from '../../assets/imgs/icon-news.svg'
 import Title from '../../components/Title'
 import Header from '../../components/Header'
-/* import Profile from '../../views/layout/Profile' */
-/* import ProfilePageTwo from '../../views/layout/ProfilePageTwo' */
-/* import Administrator from '../../views/layout/Administrator' */
-import NewAdministrator from '../../views/layout/NewAdministrator'
+/* import Profile from '../../views/layout/Profile/Profile' */
+/* import ProfilePageTwo from '../../views/layout/Profile/ProfilePageTwo' */
+/* import Administrator from '../../views/layout/Administrator/Administrator' */
+/* import AdministratorCheckOut from '../../views/layout/Administrator/AdministratorCheckOut' */
+/* import NewAdministrator from '../../views/layout/Administrator/NewAdministrator' */
+import AdministratorEditar from '../../views/layout/Administrator/AdministratorEditar'
 
 const links = [
   {
@@ -53,7 +55,9 @@ const index = () => {
         {/* <Profile /> */}
         {/* <ProfilePageTwo /> */}
         {/* <Administrator /> */}
-        <NewAdministrator />
+        {/* <NewAdministrator /> */}
+        {/* <AdministratorCheckOut /> */}
+        <AdministratorEditar />
       </div>
     </div>
   )

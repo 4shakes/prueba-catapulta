@@ -1,22 +1,20 @@
-import InputUploadImagePerfil from '../../components/inputs/InputUploadImagePerfil'
-import InputPhone from '../../components/inputs/InputPhone'
-import InputName from '../../components/inputs/InputName'
-import { ButtonDownload } from '../../components/Button'
-import Breadcrumb from '../../components/Breadcrumb'
-import { PopUp } from '../../components/Alert/index'
+import InputUploadImagePerfil from '../../../components/inputs/InputUploadImagePerfil'
+import InputPhone from '../../../components/inputs/InputPhone'
+import InputName from '../../../components/inputs/InputName'
+import { ButtonDownload } from '../../../components/Button'
+import Breadcrumb from '../../../components/Breadcrumb'
 
 const NewAdministrator = () => {
   return (
     <div className="">
-      <PopUp title="Cuenta Creada" text="Se creó la cuenta de Lucrecia Santiago con éxito." />
-      <Breadcrumb />
+      <Breadcrumb subRutaOne="Juana Sofia" />
       <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">
         <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
-          <InputUploadImagePerfil border="dashed" text='Subir Foto' color='accent' />
+          <InputUploadImagePerfil border="dashed" text='Subir Foto' color='primary' />
           <div className="mx-7  md:pl-15 lg:w-200" >
-            <h2 className="text-2xl text-accent font-bold mb-4">Completa los datos del nuevo administrador</h2>
-            <InputName labelName='Nombres' placeholder='' />
-            <InputName labelName='Apellidos' placeholder='' />
+            <h2 className="text-2xl text-accent font-bold mb-4">Datos Generales</h2>
+            <InputName labelName='Nombres' placeholder='Juana Sofia' />
+            <InputName labelName='Apellidos' placeholder='Paredes Méndez' />
             <InputName labelName='E-mail' placeholder='' />
             <div className=" lg:flex  lg:gap-13">
               <div className="lg:w-1/2">
@@ -37,7 +35,7 @@ const NewAdministrator = () => {
             <InputName labelName='Area' placeholder='' />
             <InputName labelName='Cargo' placeholder='' />
             <div className="w-32 mx-auto mt-7">
-              <ButtonDownload width="small" text="CREAR CUENTA" color='primary' outline={true} border='2' />
+              <ButtonDownload width="small" text="ACTUALIZAR" color='primary' outline={false} border='2' />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
-import IconSearch from '../../assets/imgs/iconSearch.svg'
-import { ButtonDownload, ButtonOffice } from '../../components/Button/index'
+import IconSearch from '../../../assets/imgs/iconSearch.svg'
+import { ButtonDownload, ButtonOffice } from '../../../components/Button/index'
+import InputCheck from '../../../components/inputs/InputCheck'
 const Administrator = () => {
   return (
     <div className="px-6 sm:px-10 py-8">
@@ -32,6 +33,7 @@ const Administrator = () => {
                     <th className="px-4 py-3">Apellidos</th>
                     <th className="px-4 py-3">DNI</th>
                     <th className="px-4 py-3">Area</th>
+                    <th className="px-4 py-3">Estado de voto</th>
                     <th className="px-4 py-3"></th>
                   </tr>
                 </thead>
@@ -53,6 +55,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>
@@ -74,6 +77,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>
@@ -95,6 +99,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>
@@ -116,6 +121,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>
@@ -137,6 +143,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>
@@ -158,27 +165,7 @@ const Administrator = () => {
                       20154963
                     </td>
                     <td className="px-4 py-3 ">Recursos Humanos</td>
-                    <td className="px-4 py-3">
-                      <ButtonDownload color="primary" text="Ver Perfil" width="large" />
-                    </td>
-                  </tr>
-                  <tr className="text-primary">
-                    <td className="px-4 py-3" >
-                      <div className="flex items-center justify-center text-sm">
-                        <div className="relative w-10 h-10 mr-3 rounded-full">
-                          <img className="object-cover w-full h-full rounded-full" src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" loading="lazy" />
-                          <div className="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-4 py-3 ">
-                      Juana Sofía
-                    </td>
-                    <td className="px-4 py-3">Paredes Méndez</td>
-                    <td className="px-4 py-3">
-                      20154963
-                    </td>
-                    <td className="px-4 py-3 ">Recursos Humanos</td>
+                    <td className="px-4 py-3 "><InputCheck /> </td>
                     <td className="px-4 py-3">
                       <ButtonDownload color="primary" text="Ver Perfil" width="large" />
                     </td>

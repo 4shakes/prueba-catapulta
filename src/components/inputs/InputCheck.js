@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
-import icon_path from '../../assets/ /Path.svg'
+import iconPath from '../../assets/imgs/Path.svg'
 const InputCheck = ({ name, id, textLabel }) => {
   const [show, setShow] = useState(false)
   const handleShow = () => {
     setShow(e => !e)
   }
   return (
-    <div className="mx-1 my-3">
-
+    <div className="flex justify-center">
       <input
         type="checkbox"
         name={name}
@@ -16,13 +15,13 @@ const InputCheck = ({ name, id, textLabel }) => {
       />
       <label
         htmlFor={id}
-        className="pl-7 relative cursor-pointer inline-block"
+        className=" cursor-pointer inline-block"
         onClick={handleShow}
       > {textLabel}
-        <span className={`absolute flex justify-center w-6 h-6 rounded-full 
-                border-dropdown border-2 left-0 top-0 ${show && "bg-turquoise border-none"}`
+        <span className={` flex justify-center w-7 h-7 rounded-full 
+                border-primary border-2 ${show && 'bg-warn border-none'}`
         }>
-          {(show) && <img className="w-2.5" src={icon_path} />}
+          {(show) && <img className="w-3" src={iconPath} />}
         </span>
       </label>
 

@@ -1,9 +1,9 @@
-import { ButtonDownload } from '../../components/Button/index'
-import InputName from '../../components/inputs/InputName'
-import InputUploadImage from '../../components/inputs/InputUploadImage'
-import InputTextArea from '../../components/inputs/InputTextArea'
+import { ButtonDownload } from '../../../components/Button/index'
+import InputName from '../../../components/inputs/InputName'
+import InputUploadImage from '../../../components/inputs/InputUploadImage'
+import InputTextArea from '../../../components/inputs/InputTextArea'
 
-import InputUploadImagePerfil from '../../components/inputs/InputUploadImagePerfil'
+import InputUploadImagePerfil from '../../../components/inputs/InputUploadImagePerfil'
 const ProfilePageTwo = () => {
   return (
     <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">

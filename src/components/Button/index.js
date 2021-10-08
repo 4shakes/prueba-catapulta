@@ -2,7 +2,7 @@ import excel from '../../assets/imgs/excel.svg'
 export const ButtonOffice = ({ type = 'button', office = excel }) => {
   return (
     <div className="flex justify-center">
-      <button type={type} className='flex items-center font-semibold text-label  gap-x-2 w-72 px-10' >
+      <button type={type} className='flex items-center font-semibold underline text-on-warn  text-label  gap-x-2 w-72 px-10' >
         <img src={office} alt="" />
         <p>Descargar Historial</p>
       </button>

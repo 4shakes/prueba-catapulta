@@ -1,9 +1,9 @@
 
 import separador from '../../assets/imgs/iconBreadcrumb.svg'
-const Breadcrumb = ({ route = 'BD Administrador' }) => {
+const Breadcrumb = ({ route = 'BD Administrador', subRutaOne = 'Crear Nuevo' }) => {
   const listaBreadcrumb = [
     {
-      nextRoute: 'Crear Nuevo',
+      nextRoute: subRutaOne,
       separador: separador
     }
   ]
