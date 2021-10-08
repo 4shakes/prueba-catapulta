@@ -3,6 +3,7 @@ import InputPhone from '../../../components/inputs/InputPhone'
 import InputName from '../../../components/inputs/InputName'
 import { ButtonDownload } from '../../../components/Button'
 import Breadcrumb from '../../../components/Breadcrumb'
+import ChicaPerfil from '../../../assets/imgs/chicaPerfil.png'
 
 const NewAdministrator = () => {
   return (
@@ -10,7 +11,7 @@ const NewAdministrator = () => {
       <Breadcrumb subRutaOne="Juana Sofia" />
       <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">
         <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
-          <InputUploadImagePerfil border="dashed" text='Subir Foto' color='primary' />
+          <InputUploadImagePerfil border="dashed" text='Subir Foto' color='primary' perfil={ChicaPerfil} />
           <div className="mx-7  md:pl-15 lg:w-200" >
             <h2 className="text-2xl text-accent font-bold mb-4">Datos Generales</h2>
             <InputName labelName='Nombres' placeholder='Juana Sofia' />

@@ -20,7 +20,7 @@ const InputCheck = ({ name, id, textLabel }) => {
       > {textLabel}
         <span className={` flex justify-center w-7 h-7 rounded-full 
                 border-primary border-2 ${show && 'bg-warn border-none'}`
-        }>
+        }> 
           {(show) && <img className="w-3" src={iconPath} />}
         </span>
       </label>

@@ -1,6 +1,6 @@
 import logo from '../../assets/imgs/logo.svg'
 import imagenLogin from '../../assets/imgs/imagen-login.png'
-import InputText from '../../components/InputText'
+/* import InputText from '../../components/InputText' */
 // import ForgotPassword from '../../components/ForgotPassword'
 /* import { MenuIcon } from '../../icons' */
 /* import { AlertForgotPassword } from '../../components/Alert/index'
@@ -21,8 +21,8 @@ const Login = () => {
           {/* <AlertForgotPassword /> */}
           <form className="w-64 sm:w-80" action="">
             <div className="flex flex-col">
-              <InputText label="Usuario" className="mb-4" />
-              <InputText label="Contraseña" type="password" />
+              {/*  <InputText label="Usuario" className="mb-4" />
+              <InputText label="Contraseña" type="password" /> */}
               <a
                 href="#"
                 className="text-orange-500 text-sm my-2 underline italic "
