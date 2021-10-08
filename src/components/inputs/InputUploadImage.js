@@ -1,8 +1,13 @@
-/* import { useState } from 'react' */
+import { useState } from 'react'
 import iconSuma from '../../assets/imgs/iconSuma.svg'
 const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '' }) => {
-  /*   const [newAreaCompany, setNewAreaCompany] = useState('')
-    const updateNewAreaCompany = e => setNewAreaCompany(e.target.value) */
+  const [newAreaCompany, setNewAreaCompany] = useState('')
+  const updateNewAreaCompany = e => setNewAreaCompany(e.target.value)
+
+  const createNewAreaCompany = () => {
+    console.log(newAreaCompany)
+    setNewAreaCompany('')
+  }
 
   if (button && icon) {
     return (
@@ -19,8 +24,6 @@ const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = t
             type="text"
             id="name"
             placeholder={placeholder}
-          /*             value={newAreaCompany}
-                      onChange={updateNewAreaCompany} */
           />
           <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-primary text-white text-sm  ">Subir imagen</button >
           <img
@@ -65,11 +68,10 @@ const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = t
             type="text"
             id="name"
             placeholder={placeholder}
+            value={newAreaCompany}
+            onChange={updateNewAreaCompany}
           />
-          <img
-            src={iconSuma}
-            className="cursor-pointer self-center ml-2"
-          />
+          <button onClick={createNewAreaCompany}> <img src={iconSuma} className="cursor-pointer self-center ml-2" /></button>
         </div>
       </div>
     )

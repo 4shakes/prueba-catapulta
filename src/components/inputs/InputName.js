@@ -1,4 +1,4 @@
-const InputName = ({ labelName = 'Nombre', placeholder = 'Lindley' }) => {
+const InputName = ({ labelName = 'Nombre', placeholder = 'Lindley', type = 'text' }) => {
   return (
 
     <div>
@@ -11,7 +11,7 @@ const InputName = ({ labelName = 'Nombre', placeholder = 'Lindley' }) => {
       <input
         className="  w-full text-on-warn border border-primary mb-4 outline-none py-2 pl-4  focus:ring-2  focus:ring-2 focus:ring-accent focus:border-accent-500"
         name="name"
-        type="text"
+        type={type}
         id="name"
         placeholder={placeholder}
       />

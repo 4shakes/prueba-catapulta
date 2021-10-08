@@ -3,10 +3,12 @@ import InputPhone from '../../components/inputs/InputPhone'
 import InputName from '../../components/inputs/InputName'
 import { ButtonDownload } from '../../components/Button'
 import Breadcrumb from '../../components/Breadcrumb'
+import { PopUp } from '../../components/Alert/index'
 
 const NewAdministrator = () => {
   return (
     <div className="">
+      <PopUp title="Cuenta Creada" text="Se creó la cuenta de Lucrecia Santiago con éxito." />
       <Breadcrumb />
       <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">
         <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
