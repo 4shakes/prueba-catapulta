@@ -1,8 +1,14 @@
 import React from 'react'
 
-const InputTextArea = ({ placeholder }) => {
+const InputTextArea = ({ labelName = 'sds', placeholder }) => {
   return (
     <div className="">
+      <label
+        className=" text-lg tracking-tight font-bold text-on-warn"
+        htmlFor="name"
+      >{labelName}
+      </label>
+
       <textarea
         className=" w-full border border-primary text-on-warn outline-none
          py-2 pl-4  focus:ring-2

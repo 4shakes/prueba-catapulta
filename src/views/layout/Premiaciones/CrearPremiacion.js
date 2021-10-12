@@ -2,6 +2,7 @@ import React from 'react'
 import Breadcrumb from '../../../components/Breadcrumb'
 import { ButtonDownload } from '../../../components/Button'
 import InputUploadImage from '../../../components/inputs/InputUploadImage'
+import Title from '../../../components/Title'
 
 const CrearPremiacion = () => {
   /* RUTA QUE PUSE DE MODELO Y QUE NO FUNCIONA EN MI PROYECTO ES PARA QUE LO IMPLEMENTEN EN EL PROYECTO PRINCIPAL */
@@ -13,6 +14,7 @@ const CrearPremiacion = () => {
 
   return (
     <div className="">
+      <Title title='Partes de la Premiación' />
       <Breadcrumb crumbs={crumbs} />
       <div className="w-full pb-8 mt-4 md:mt-2 md:max-w-280 mx-auto flex justify-center lg:justify-center px-3">
         <div className="flex md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >

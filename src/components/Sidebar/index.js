@@ -3,7 +3,6 @@ import iconDashboard from '../../assets/imgs/icon-dashboard.svg'
 import iconProfile from '../../assets/imgs/icon-profile.svg'
 import iconCompanies from '../../assets/imgs/icon-companies.svg'
 import iconNews from '../../assets/imgs/icon-news.svg'
-import Title from '../../components/Title'
 import Header from '../../components/Header'
 /* import Profile from '../../views/layout/Profile/Profile' */
 /* import ProfilePageTwo from '../../views/layout/Profile/ProfilePageTwo' */
@@ -13,8 +12,11 @@ import Header from '../../components/Header'
 /* import AdministratorEditar from '../../views/layout/Administrator/AdministratorEditar' */
 /* import AdministratorHistory from '../../views/layout/Administrator/AdministratorHistory' */
 /* import AdministratorHistory from '../../views/layout/Premiaciones/CrearPremiacion' */
-import CrearPremiacion from '../../views/layout/Premiaciones/CrearPremiacion'
-
+/* import CrearPremiacion from '../../views/layout/Premiaciones/CrearPremiacion' */
+/* import GestionPremiacion from '../../views/layout/Premiaciones/GestionPremiacion' */
+/* import Premiacion from '../../views/layout/Premiaciones/Premiacion' */
+/* import Premiacion from '../../views/layout/Premiaciones/Premiacion' */
+import PremiacionParte1 from '../../views/layout/Premiaciones/PremiacionParte1'
 const links = [
   {
     url: iconDashboard,
@@ -52,8 +54,6 @@ const index = () => {
       </div>
       <div className="w-full">
         <Header />
-        <Title title='Perfil' />
-
         {/* Parte donde van las vistas del proyecto   */}
         {/* <Profile /> */}
         {/* <ProfilePageTwo /> */}
@@ -62,7 +62,10 @@ const index = () => {
         {/* <AdministratorCheckOut /> */}
         {/* <AdministratorEditar /> */}
         {/* <AdministratorHistory /> */}
-        <CrearPremiacion />
+        {/* <CrearPremiacion /> */}
+        {/* <GestionPremiacion /> */}
+        {/* <Premiacion /> */}
+        <PremiacionParte1 />
       </div>
     </div>
   )
