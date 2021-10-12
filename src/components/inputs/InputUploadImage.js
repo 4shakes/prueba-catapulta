@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import iconSuma from '../../assets/imgs/iconSuma.svg'
-const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '' }) => {
+const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '', textButton = 'Subir imagen' }) => {
   const [newAreaCompany, setNewAreaCompany] = useState('')
   const updateNewAreaCompany = e => setNewAreaCompany(e.target.value)
 
@@ -25,7 +25,7 @@ const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = t
             id="name"
             placeholder={placeholder}
           />
-          <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-primary text-white text-sm  ">Subir imagen</button >
+          <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-primary text-white text-sm  ">{textButton}</button >
           <img
             src={iconSuma}
             className="cursor-pointer self-center ml-2"
@@ -49,7 +49,7 @@ const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = t
             id="name"
             placeholder={placeholder}
           />
-          <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-primary text-white text-sm  mr-2">Subir imagen</button >
+          <button type="button" className="flex-0 tracking-tight px-8 rounded-none h-10.5 bg-primary text-white text-sm  mr-2">{textButton}</button >
         </div>
       </div>
     )

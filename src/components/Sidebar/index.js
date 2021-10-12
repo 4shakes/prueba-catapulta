@@ -11,7 +11,9 @@ import Header from '../../components/Header'
 /* import AdministratorCheckOut from '../../views/layout/Administrator/AdministratorCheckOut' */
 /* import NewAdministrator from '../../views/layout/Administrator/NewAdministrator' */
 /* import AdministratorEditar from '../../views/layout/Administrator/AdministratorEditar' */
-import AdministratorHistory from '../../views/layout/Administrator/AdministratorHistory'
+/* import AdministratorHistory from '../../views/layout/Administrator/AdministratorHistory' */
+/* import AdministratorHistory from '../../views/layout/Premiaciones/CrearPremiacion' */
+import CrearPremiacion from '../../views/layout/Premiaciones/CrearPremiacion'
 
 const links = [
   {
@@ -59,7 +61,8 @@ const index = () => {
         {/* <NewAdministrator /> */}
         {/* <AdministratorCheckOut /> */}
         {/* <AdministratorEditar /> */}
-        <AdministratorHistory />
+        {/* <AdministratorHistory /> */}
+        <CrearPremiacion />
       </div>
     </div>
   )
