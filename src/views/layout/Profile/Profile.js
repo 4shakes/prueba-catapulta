@@ -1,10 +1,26 @@
+import { useState } from 'react'
 import { ButtonDownload } from '../../../components/Button/index'
 import InputName from '../../../components/inputs/InputName'
 import InputPhone from '../../../components/inputs/InputPhone'
 import InputUploadImage from '../../../components/inputs/InputUploadImage'
 import InputUploadImagePerfil from '../../../components/inputs/InputUploadImagePerfil'
+import RowCompany from './RowCompany'
 
 const Profile = () => {
+  const [AreaCompanyItems, setAreaCompanyItems] = useState([])
+
+  const createNewCompany = nameNewCompany => {
+    if (!AreaCompanyItems.find(company => company.name === nameNewCompany)) {
+      setAreaCompanyItems([...AreaCompanyItems, { name: nameNewCompany }])
+    }
+  }
+
+  const CompanyRow = () => {
+    return AreaCompanyItems.map(item => (
+      <RowCompany item={item} key={item.name} />
+    ))
+  }
+
   return (
     <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">
       <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
@@ -22,7 +38,8 @@ const Profile = () => {
               <InputName labelName='Telefono' placeholder='' />
             </div>
           </div>
-          <InputUploadImage text="Area de la Empresa" icon={true} button={false} />
+          <InputUploadImage text="Area de la Empresa" icon={true} button={false} callback={createNewCompany} />
+          <ul> {CompanyRow()}</ul>
           <h2 className="text-2xl text-primary font-bold my-4">Datos del Administrador Principal de la Empresa</h2>
           <InputName labelName='Nombres' placeholder='' />
           <InputName labelName='Apellidos' placeholder='' />

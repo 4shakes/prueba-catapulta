@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputTextArea = ({ labelName = 'sds', placeholder }) => {
+const InputTextArea = ({ labelName, placeholder }) => {
   return (
     <div className="">
       <label

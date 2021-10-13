@@ -13,7 +13,9 @@ const Administrator = () => {
             id="name"
             placeholder="Buscar por número de DNI o Área"
           />
-          <ButtonDownload text="CREAR NUEVO" color="primary" width="small" />
+          <div className="w-44">
+            <ButtonDownload text="CREAR NUEVO" color="primary" width="small" />
+          </div>
         </div>
         <select className="border h-12 self-center w-40 px-6 border-primary text-lg text-primary font-bold" value="Filtrar">
           <option className="font-bold text-center" disabled>Filtrar</option>

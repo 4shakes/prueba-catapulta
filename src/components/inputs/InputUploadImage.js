@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import iconSuma from '../../assets/imgs/iconSuma.svg'
-const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '', textButton = 'Subir imagen' }) => {
+const InputUploadImage = ({ text = 'Area de la Empresa', button = true, icon = true, placeholder = '', textButton = 'Subir imagen', callback }) => {
   const [newAreaCompany, setNewAreaCompany] = useState('')
   const updateNewAreaCompany = e => setNewAreaCompany(e.target.value)
 
   const createNewAreaCompany = () => {
-    console.log(newAreaCompany)
+    callback(newAreaCompany)
     setNewAreaCompany('')
   }
 
