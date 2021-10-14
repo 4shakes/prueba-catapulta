@@ -1,16 +1,25 @@
 import ProfilePhoto from '../../../components/ProfilePhoto'
 import { ButtonDownload, ButtonOffice } from '../../../components/Button/index'
 import Breadcrumb from '../../../components/Breadcrumb'
+import Title from '../../../components/Title'
 const AdministratorHistory = () => {
+  /* RUTA QUE PUSE DE MODELO Y QUE NO FUNCIONA EN MI PROYECTO ES PARA QUE LO IMPLEMENTEN EN EL PROYECTO PRINCIPAL */
+  const crumbs = [
+    { path: '/administrador', label: 'BD Administrador' },
+    { path: '/empleados/juana-sofia', label: 'Juana sofia' },
+    { path: '/empleados/juana-sofia/historial', label: 'historial de votaciones' }
+  ]
+  /* RUTA QUE PUSE DE MODELO Y QUE NO FUNCIONA EN MI PROYECTO ES PARA QUE LO IMPLEMENTEN EN EL PROYECTO PRINCIPAL */
   return (
     <div className="">
-      <Breadcrumb subRutaOne="Juana Sofia" />
+      <Title title='Juana sofia' />
+      <Breadcrumb crumbs={crumbs} />
       <div className="px-6 sm:px-10 py-8">
         <div className="flex flex-col gap-y-6">
           <div className="self-center">
             <ProfilePhoto />
           </div>
-          <div className="self-end">
+          <div className="mt-10 self-end">
             <ButtonOffice />
           </div>
           <section className="container ">

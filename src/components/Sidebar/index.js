@@ -5,13 +5,12 @@ import iconCompanies from '../../assets/imgs/icon-companies.svg'
 import iconNews from '../../assets/imgs/icon-news.svg'
 import Header from '../../components/Header'
 /* import Profile from '../../views/layout/Profile/Profile' */
-import ProfilePageTwo from '../../views/layout/Profile/ProfilePageTwo'
+/* import ProfilePageTwo from '../../views/layout/Profile/ProfilePageTwo' */
 /* import Administrator from '../../views/layout/Administrator/Administrator' */
 /* import AdministratorCheckOut from '../../views/layout/Administrator/AdministratorCheckOut' */
 /* import NewAdministrator from '../../views/layout/Administrator/NewAdministrator' */
 /* import AdministratorEditar from '../../views/layout/Administrator/AdministratorEditar' */
-/* import AdministratorHistory from '../../views/layout/Administrator/AdministratorHistory' */
-/* import AdministratorHistory from '../../views/layout/Premiaciones/CrearPremiacion' */
+import AdministratorHistory from '../../views/layout/Administrator/AdministratorHistory'
 /* import CrearPremiacion from '../../views/layout/Premiaciones/CrearPremiacion' */
 /* import GestionPremiacion from '../../views/layout/Premiaciones/GestionPremiacion' */
 /* import Premiacion from '../../views/layout/Premiaciones/Premiacion' */
@@ -56,12 +55,12 @@ const index = () => {
         <Header />
         {/* Parte donde van las vistas del proyecto   */}
         {/* <Profile /> */}
-        <ProfilePageTwo />
+        {/* <ProfilePageTwo /> */}
         {/* <Administrator /> */}
         {/* <NewAdministrator /> */}
         {/* <AdministratorCheckOut /> */}
         {/* <AdministratorEditar /> */}
-        {/* <AdministratorHistory /> */}
+        <AdministratorHistory />
         {/* <GestionPremiacion /> */}
         {/* <CrearPremiacion /> */}
         {/* <Premiacion /> */}

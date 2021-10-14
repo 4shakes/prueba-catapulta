@@ -1,21 +1,23 @@
-/* import { useState } from 'react' */
+import { useState } from 'react'
 import { ButtonDownload } from '../../../components/Button/index'
 import InputName from '../../../components/inputs/InputName'
 import InputUploadImage from '../../../components/inputs/InputUploadImage'
 import InputNameTextArea from '../../../components/inputs/InputNameTextArea'
 import InputUploadImagePerfil from '../../../components/inputs/InputUploadImagePerfil'
+import RowInfo from './RowInfo'
 const ProfilePageTwo = () => {
-  /*   const [InfoCompanyItems, setInfoCompanyItems] = useState([])
-    const createNewCompany = nameNewCompany => {
-      if (!InfoCompanyItems.find(company => company.name === nameNewCompany)) {
-        setInfoCompanyItems([...InfoCompanyItems, { name: nameNewCompany }])
-      }
+  const [InfoCompanyItems, setInfoCompanyItems] = useState([
+  ])
+  const createNewInfo = (infoLabel, infoTextArea) => {
+    if (!InfoCompanyItems.find(info => info.label === infoLabel)) {
+      setInfoCompanyItems([...InfoCompanyItems, { label: infoLabel, textArea: infoTextArea }])
     }
-    const CompanyRow = () => {
-      return InfoCompanyItems.map(item => (
-        <RowCompany item={item} key={item.name} />
-      ))
-    } */
+  }
+  const CompanyRowInfo = () => {
+    return InfoCompanyItems.map(item => (
+      <RowInfo label={item.label} area={item.textArea} key={item.label} />
+    ))
+  }
   return (
     <div className="w-full pb-8 md:max-w-280 lg:max-w-320 xl:max-w-360 mx-auto md:flex md:justify-center lg:justify-center px-3">
       <div className="flex flex-col md:flex-row md:justify-end md:mt-10 md:mb-8 md:gap-x-10 " >
@@ -32,7 +34,8 @@ const ProfilePageTwo = () => {
           </div>
           <h2 className="text-2xl text-primary font-bold my-4">Información de la Empresa</h2>
           <InputUploadImage text="Nombre del Principio 1" icon={false} button={true} />
-          <InputNameTextArea />
+          <InputNameTextArea callback={createNewInfo} />
+          {CompanyRowInfo()}
           <div className="w-32 mx-auto mt-7">
             <ButtonDownload width="small" text="Siguiente" color='primary' outline={true} border='2' />
           </div>
